@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		47F0087B2067024A008F3E31 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 47F0087A2067024A008F3E31 /* main.c */; };
+		47F00883206702DC008F3E31 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47F00882206702DC008F3E31 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		47F008772067024A008F3E31 /* FluidSimulation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FluidSimulation; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F0087A2067024A008F3E31 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		47F00882206702DC008F3E31 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F00883206702DC008F3E31 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				47F008792067024A008F3E31 /* FluidSimulation */,
 				47F008782067024A008F3E31 /* Products */,
+				47F00881206702DC008F3E31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				47F0087A2067024A008F3E31 /* main.c */,
 			);
 			path = FluidSimulation;
+			sourceTree = "<group>";
+		};
+		47F00881206702DC008F3E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47F00882206702DC008F3E31 /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
